@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
-import AboutImg from '../assets/images/about-page-img.png';
+import AboutImg from '../assets/images/abdullah_formal.png';
 import AboutInfoItem from '../components/AboutInfoItem';
 import ContactBanner from '../components/ContactBanner';
 
@@ -112,26 +112,28 @@ export default function About() {
           <div className="about__info__items">
             <div className="about__info__item">
               <h1 className="about__info__heading">Education</h1>
-
               <AboutInfoItem
-                title="School"
-                items={['Nasirabad Govt. High School, Chattogram']}
+                title="B.Sc in CSE"
+                items={[
+                  'Green University of Bangladesh(2018-2021)',
+                  'International Islamic University Chittagong(2017-2018)',
+                ]}
               />
               <AboutInfoItem
-                title="Collage"
-                items={['BAF Shaheen College Chattogram']}
+                title="HSC"
+                items={['Bijoy Smarani University College(2014-2015)']}
               />
               <AboutInfoItem
-                title="Varsity"
-                items={['University Of Chitiagong']}
+                title="SSC"
+                items={['Madam Bibir Hat Shahjahan High School']}
               />
             </div>
             <div className="about__info__item">
               <h1 className="about__info__heading">My Skills</h1>
 
               <AboutInfoItem
-                title="FrontEnd"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT']}
+                title="Expertise"
+                items={['HTML', 'CSS', 'JavaScript', 'REACT','React Query']}
               />
               <AboutInfoItem
                 title="BackEnd"
