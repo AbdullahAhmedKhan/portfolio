@@ -96,8 +96,8 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: '+880152122###6',
-                path: 'tel:+88012312',
+                title: '+8801521224536',
+                path: 'tel:+8801521224536',
               },
               {
                 title: 'abdullahahmedkhan8@gmail.com',
@@ -132,7 +132,7 @@ export default function Footer() {
               },
               {
                 title: 'Linkedin',
-                path: 'linkedin.com/in/AbdullahAhmedKhan',
+                path: 'https://www.linkedin.com/in/AbdullahAhmedKhan/',
               },
             ]}
           />
@@ -140,12 +140,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>
-            © 2021 - Ayan Khan | Designed By{' '}
-            <a target="_blank" rel="noreferrer" href="http://webcifar.com">
-              web cifar
-            </a>{' '}
-          </PText>
+          <PText>© 2022 - Abdullah Ahammed Khan</PText>
         </div>
       </div>
     </FooterStyle>

@@ -133,31 +133,41 @@ export default function About() {
 
               <AboutInfoItem
                 title="Expertise"
-                items={['HTML', 'CSS', 'JavaScript', 'REACT','React Query']}
+                items={[
+                  'HTML,CSS',
+                  'JavaScript(ES6)',
+                  'REACT',
+                  'React Query',
+                  'REST API',
+                ]}
               />
               <AboutInfoItem
-                title="BackEnd"
-                items={['Node', 'Express', 'PHP']}
+                title="Comfortable"
+                items={['Mongodb', 'Express', 'C']}
               />
               <AboutInfoItem
-                title="Design"
-                items={['Photoshop', 'After Effects', 'Figma']}
+                title="Familiar"
+                items={['Node', 'TypeScript', 'Next Js']}
+              />
+              <AboutInfoItem
+                title="CSS Libraries"
+                items={['Bootstrap', 'Tailwind CSS', 'DaisyUI']}
+              />
+              <AboutInfoItem
+                title="Tools"
+                items={['Firebase', 'Figma', 'Github', 'Netlify', 'Heroku']}
               />
             </div>
             <div className="about__info__item">
-              <h1 className="about__info__heading">Experiences</h1>
+              <h1 className="about__info__heading">Professional Training</h1>
 
               <AboutInfoItem
-                title="2010-2012"
-                items={['junior developer at web Cifar']}
+                title="2022"
+                items={['Complete Web Developing(Programming hero)']}
               />
               <AboutInfoItem
-                title="2012-2016"
-                items={['Front end developer at web Cifar ']}
-              />
-              <AboutInfoItem
-                title="2016-"
-                items={['Freelance web Developer']}
+                title="2021"
+                items={['Responsive Web Design(Coderstrust Bangladesh)']}
               />
             </div>
           </div>
