@@ -36,13 +36,13 @@ export default function ServicesSection() {
           />
           <ServicesSectionItem
             icon={<MdCode />}
-            title="web dev"
-            desc="I also develop the websites. I create high performance website with blazing fast speed."
+            title="web development"
+            desc="I also develop the websites. I can develop both the client side and server side. For developing I use so many technologies."
           />
           <ServicesSectionItem
             icon={<MdPhonelinkSetup />}
-            title="app Dev"
-            desc="I develop mobile application. I create mobile app with eye catching ui. "
+            title="Web service"
+            desc="I can fix any problem or error in website. I also able to adding new features or options in website"
           />
         </div>
       </div>
