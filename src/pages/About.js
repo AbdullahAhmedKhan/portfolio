@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Typical from 'react-typical';
 import PText from '../components/PText';
 import Button from '../components/Button';
 import AboutImg from '../assets/images/abdullah_formal.png';
@@ -83,13 +84,27 @@ export default function About() {
               <p className="about__subheading">
                 Hi, I am <span>Abdullah Ahammed Khan</span>
               </p>
-              <h2 className="about__heading">A freelance Web developer</h2>
+              <h2 className="about__heading">
+                A
+                <Typical
+                  steps={[
+                    'Frontend Developer',
+                    2000,
+                    'MERN Stack Developer',
+                    2000,
+                    'Full Stact Developer',
+                    2000,
+                  ]}
+                  loop={Infinity}
+                  wrapper="p"
+                />
+              </h2>
               <div className="about__info">
                 <PText>
-                  I am from chittagong, Bangladesh. A place of beauty and
-                  nature. Since my childhood, i love art and design. I always
-                  try to design stuff with my unique point of view. I also love
-                  to create things that can be usefull to others.
+                  I am from Dhaka, Bangladesh. Since my childhood, I love game
+                  and design. I always try to design stuff with my unique point
+                  of view. I also love to create things that can be usefull to
+                  others.
                   <br /> <br />
                   I started coding since I was in high school. Coding is also an
                   art for me. I love it and now I have the opportunity to design
@@ -97,10 +112,10 @@ export default function About() {
                   enjoyed the process a lot.
                   <br />
                   <br />
-                  My vision is to make the world a better place. Now almost
-                  everything is becoming better than ever. It is time for us to
-                  create more good stuff that helps the world to become a better
-                  place.
+                  My vision is to play a role in technology which can make a
+                  better world. Now almost everything is becoming better than
+                  ever. It is time for us to create more good stuff that helps
+                  the world to become a better place.
                 </PText>
               </div>
               <Button btnText="Download CV" btnLink="#" />
