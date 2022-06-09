@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Blogs from './components/Blogs';
 import Footer from './components/Footer';
 import NavMenu from './components/NavMenu';
 import ScrollToTop from './components/ScrollToTop';
@@ -20,6 +21,9 @@ export default function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/blogs">
+            <Blogs />
           </Route>
           <Route path="/projects">
             <Projects />

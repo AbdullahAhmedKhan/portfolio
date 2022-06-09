@@ -155,6 +155,17 @@ export default function NavMenu() {
         </li>
         <li>
           <NavLink
+            to="/blogs"
+            onClick={() => setShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setShowNav(!showNav)}
+            tabIndex={0}
+          >
+            Blogs
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/contact"
             onClick={() => setShowNav(!showNav)}
             role="button"

@@ -7,6 +7,8 @@ import CavinImg from '../images/cavinimg.jpg';
 import airtony from '../images/airtony.png';
 import theFruits from '../images/the-fruits.png';
 import ictTutor from '../images/ict-tutor.png';
+import productAnalysis from '../images/product-analysis.png';
+import convention from '../images/convention.png';
 
 const projects = [
   {
@@ -37,6 +39,24 @@ const projects = [
     img: ictTutor,
     github: 'https://github.com/AbdullahAhmedKhan/ict-tutor',
     liveSite: 'https://ict-tutor-a1a22.web.app/',
+  },
+  {
+    id: uuidv4(),
+    name: 'Product Analysis',
+    desc:
+      'In this website a product have been reviewed and some peoples reviewed of this product and given ratings.',
+    img: productAnalysis,
+    github: 'https://github.com/AbdullahAhmedKhan/product-analysis',
+    liveSite: 'https://productanalysis.netlify.app/',
+  },
+  {
+    id: uuidv4(),
+    name: 'Convention Center',
+    desc:
+      'Its a convention center landing webpage where have some sections. Their packages and some customers reviews displayed here.',
+    img: convention,
+    github: 'https://github.com/AbdullahAhmedKhan/convention-center',
+    liveSite: 'https://dhaka-community-center.netlify.app',
   },
 ];
 
