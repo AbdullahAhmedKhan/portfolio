@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
@@ -35,6 +37,12 @@ const NavStyles = styled.nav`
     .active {
       color: var(--white);
     }
+  }
+  .resume_btn {
+    border-radius: 5px;
+    background-color: #f0eeed;
+    border: 0;
+    color: black;
   }
   .mobile-menu-icon {
     position: absolute;
@@ -156,6 +164,15 @@ export default function NavMenu() {
             Contact
           </NavLink>
         </li>
+        <button className="resume_btn">
+          <a
+            href="https://drive.google.com/file/d/1UKgPyCAFvsdx9pDJEX9P6FBanK1aHRyB/view?usp=sharing"
+            target="_blank"
+          >
+            Download RESUME
+          </a>
+        </button>
+        <li />
       </ul>
     </NavStyles>
   );

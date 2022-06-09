@@ -4,42 +4,39 @@ import UTrackerImg from '../images/utracker.jpg';
 import GreenCtgImg from '../images/greenctg.jpg';
 import CoinTrackerImg from '../images/cointracker.jpg';
 import CavinImg from '../images/cavinimg.jpg';
+import airtony from '../images/airtony.png';
+import theFruits from '../images/the-fruits.png';
+import ictTutor from '../images/ict-tutor.png';
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
+    name: 'Airtony',
     desc:
-      'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+      'An Air condition parts website where users can buy any parts. Firebase authentication used for login and signup. There have admin role and users role using CRUD operation & also payment method integration.',
+    img: airtony,
+    github: 'https://github.com/AbdullahAhmedKhan/airtony',
+    githubServer: 'https://github.com/AbdullahAhmedKhan/airtony-server',
+    liveSite: 'https://airtony-ef449.web.app/',
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    name: 'The Fruits',
     desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
+      'Its a website like warehouse of fruits. Here the managing inventories and re-stock, delivered and adding new item implemented. Our services and what our clients say shown in homepage.',
+    img: theFruits,
+    github: 'https://github.com/AbdullahAhmedKhan/the-fruits',
+    githubServer: 'https://github.com/AbdullahAhmedKhan/the-fruits-server',
+    liveSite: 'https://the-fruits.web.app/',
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
+    name: 'ICT Tutor',
     desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
-  },
-  {
-    id: uuidv4(),
-    name: "Cavin's Portfolio",
-    desc:
-      'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
-  },
-  {
-    id: uuidv4(),
-    name: 'Tracking Soft',
-    desc:
-      'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+      'A project ICT Tutor where student can buy services and will learn about that. Here have four major services.A interesting blog page also included.cd cdLogin and registration authentication implemented.',
+    img: ictTutor,
+    github: 'https://github.com/AbdullahAhmedKhan/ict-tutor',
+    liveSite: 'https://ict-tutor-a1a22.web.app/',
   },
 ];
 

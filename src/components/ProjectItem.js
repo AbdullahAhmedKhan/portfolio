@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -29,6 +30,9 @@ const ProjectItemStyles = styled.div`
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
+  .text-link {
+    color: #80c6f1;
+  }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
@@ -39,6 +43,8 @@ const ProjectItemStyles = styled.div`
 export default function ProjectItem({
   img = ProjectImg,
   title = 'Project Name',
+  github = 'Github link',
+  liveSite = 'Live Link',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 }) {
   return (
@@ -51,6 +57,16 @@ export default function ProjectItem({
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>
+        <p className="projectItem__desc">
+          <a className="text-link" href={github} target="_blank">
+            GITHUB
+          </a>
+        </p>
+        <p className="projectItem__desc">
+          <a className="text-link" href={liveSite} target="_blank">
+            Live Preview
+          </a>
+        </p>
       </div>
     </ProjectItemStyles>
   );
