@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Blogs from './components/Blogs';
 import Footer from './components/Footer';
 import NavMenu from './components/NavMenu';
+import ProjectDetails from './components/ProjectDetails';
 import ScrollToTop from './components/ScrollToTop';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -24,6 +25,9 @@ export default function App() {
           </Route>
           <Route path="/blogs">
             <Blogs />
+          </Route>
+          <Route path="/projects/projectsDetails">
+            <ProjectDetails />
           </Route>
           <Route path="/projects">
             <Projects />

@@ -99,6 +99,7 @@ export default function About() {
                   wrapper="p"
                 />
               </h2>
+
               <div className="about__info">
                 <PText>
                   I am from Dhaka, Bangladesh. Since my childhood, I love game

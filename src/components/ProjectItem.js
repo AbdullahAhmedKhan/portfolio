@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import ProjectImg from '../assets/images/projectImg.png';
+import ProjectDetails from './ProjectDetails';
 
 const ProjectItemStyles = styled.div`
   .projectItem__img {
@@ -19,7 +20,7 @@ const ProjectItemStyles = styled.div`
   .projectItem__info {
     margin-top: 1rem;
     background-color: var(--deep-dark);
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 12px;
   }
   .projectItem__title {
@@ -32,6 +33,7 @@ const ProjectItemStyles = styled.div`
   }
   .text-link {
     color: #80c6f1;
+    margin-right: 15px;
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
@@ -41,12 +43,30 @@ const ProjectItemStyles = styled.div`
 `;
 
 export default function ProjectItem({
+  id = '1',
   img = ProjectImg,
   title = 'Project Name',
   github = 'Github link',
   liveSite = 'Live Link',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 }) {
+  function handleDetails() {
+    console.log({ title });
+    const name = { title };
+    if ({ title } === 'Airtony') {
+      console.log('equal');
+      <ProjectDetails
+        title={title}
+        desc={desc}
+        img={img}
+        github={github}
+        liveSite={liveSite}
+      />;
+      <ProjectDetails />;
+    } else {
+      console.log('false');
+    }
+  }
   return (
     <ProjectItemStyles>
       <Link to="/projects" className="projectItem__img">
@@ -61,11 +81,12 @@ export default function ProjectItem({
           <a className="text-link" href={github} target="_blank">
             GITHUB
           </a>
-        </p>
-        <p className="projectItem__desc">
           <a className="text-link" href={liveSite} target="_blank">
             Live Preview
           </a>
+          <Link className="text-link" onClick={handleDetails}>
+            Details
+          </Link>
         </p>
       </div>
     </ProjectItemStyles>
